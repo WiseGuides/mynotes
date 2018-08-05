@@ -5,6 +5,7 @@ import WithStore from '../WithStore';
 import Layout from './layout/Layout';
 import NotFound from './NotFound';
 import Dashboard from './Dashboard';
+import SemanticDashboard from './SemanticDashboard';
 
 // Routes with Layout and store
 // const DecoratedRoute = ({ component: Component, ...rest}) => {
@@ -31,6 +32,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Dashboard} />
+          <Route exact path="/sd" component={SemanticDashboard} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
