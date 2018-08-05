@@ -22,6 +22,15 @@ module.exports = {
             "presets": ["react","stage-3"]
           }
         }
+      },
+      {
+        test: /\.less$/,
+        // exclude: /node_modules/,
+        use: [
+        'style-loader',          
+        'css-loader',
+        'less-loader'
+        ]
       }
       // ,{
       //    test: /\.(jpe?g|png|gif)$/,
